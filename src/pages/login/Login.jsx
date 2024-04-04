@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom'
 import './Login.scss'
 
 const Login = () => {
   return (
     <div>
-      <h1>Hello to Fake Twitter</h1>
       <div className="login">
         <div className="card">
           <div className="left">
@@ -17,7 +17,9 @@ const Login = () => {
           <div className="right">
             <h1>Register</h1>
             <p>If you dont't have an account, you can register here.</p>
-            <button>Registration</button>
+            <Link to="/registration">
+              <button>Registration</button>
+            </Link>
           </div>
         </div>
       </div>
