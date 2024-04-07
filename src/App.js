@@ -20,8 +20,12 @@ function App() {
       <div>
         <Navbar />
         <div style={{ display: 'flex' }}>
-          <Sidebar />
-          <Outlet />
+          <div style={{ flex: 2 }}>
+            <Sidebar />
+          </div>
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
         </div>
       </div>
     )

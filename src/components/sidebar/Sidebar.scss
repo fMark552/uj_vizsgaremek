@@ -1,0 +1,35 @@
+.sidebar {
+  background-color: white;
+  color: black;
+  margin-right: 25px;
+  padding: 20px;
+    position: fixed;
+    left: 0;
+  border-bottom-right-radius: 20px;
+  border: 1px solid lightgray;
+
+  .stats {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu {
+    text-align: center;
+
+    button {
+      border: black solid 1px;
+      background-color: white;
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+
+    button {
+      margin-left: 180px;
+    }
+  }
+}
