@@ -4,11 +4,29 @@ import HeartBrokenOutlinedIcon from '@mui/icons-material/HeartBrokenOutlined'
 import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
 import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined'
 import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div>
+      <div className="mobile_sidebar">
+        <button>Profile</button>
+        <button>Friends</button>
+        <button>Stats</button>
+      </div>
+
       <div className="container sidebar">
+        <div className="images">
+          <div className="image">
+            <Link to={`/profile/1`}>
+              <img
+                src="https://www.kindpng.com/picc/m/252-2524695_dummy-profile-image-jpg-hd-png-download.png"
+                alt="profile_pic"
+                className="profilePic"
+              />
+            </Link>
+          </div>
+        </div>
         <div className="menu">
           <h3>Friend list</h3>
           <hr />
@@ -22,14 +40,6 @@ const Sidebar = () => {
           </div>
           <div className="item">
             <p>User3</p>
-            <button>Unfollow</button>
-          </div>
-          <div className="item">
-            <p>User4</p>
-            <button>Unfollow</button>
-          </div>
-          <div className="item">
-            <p>User5</p>
             <button>Unfollow</button>
           </div>
           <button>See all friends</button>

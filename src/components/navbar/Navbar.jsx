@@ -10,13 +10,19 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="left">
-        <HomeOutlinedIcon />
-        <AccountCircleOutlinedIcon />
+        <Link className="link" to="/">
+          <HomeOutlinedIcon />
+        </Link>
+        <Link className="link" to={`/profile/1`}>
+          <AccountCircleOutlinedIcon />
+        </Link>
         <SettingsOutlinedIcon />
       </div>
       <div className="center">
         <div className="logo">
-          <img src={Logo} alt="logo" width="40px" />
+          <Link to="/">
+            <img src={Logo} alt="logo" width="40px" />
+          </Link>
         </div>
       </div>
       <div className="right">

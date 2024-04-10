@@ -9,6 +9,18 @@
   border-bottom: 3px solid #1179ba;
   position: sticky;
   top: 0;
+
+  .logo {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+
   .left {
     display: flex;
     align-items: center;
@@ -35,6 +47,10 @@
       border: none;
       width: 100%;
       padding: 5px;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
     }
   }
 }
